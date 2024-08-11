@@ -104,7 +104,7 @@ nav{
 
 .main-nav li {
     display: inline-block;
-    margin-left: 40px;
+    margin-right: 40px;
     
     
 }
