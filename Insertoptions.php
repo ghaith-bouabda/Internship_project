@@ -92,50 +92,109 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="nav">
-        <p><a href="dashboard.php"><img src="img/Logo-Secil-min-300x288.png" width=30px></a></p>
-        <div class="right-links">
-        <a href="logout.php"><button class="btn">Log out</button></a>
-        </div>
-    </div>
+<header>
+<nav>
+                        <div class="">
+                        <img src="img/logo-1-1.png"  alt="logo" class="logo">
+                            <ul class="main-nav">
+                            <li> <a href="dashboard.php">Home</a></li>
+
+                            <li> <a href="#">About us</a></li>
+                                
+                                
+                            </ul> 
+                        </div>    
+                    </nav>
+<nav>
+</header>
+<body>
     <style> 
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lato','Arial' ,sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+}
+body {
+    padding-bottom: 60px; 
+}
+nav{
+    height:50px;
+    background-color:white;
  
- .nav {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         background-color: #121212;
-         padding: 10px 10px;
-         margin: 10px 0px;
-         color: white;
-     }
+}
+.logo {
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
 
-     .nav img {
-         height: 30px; 
-     }
+.main-nav {
+    
+    
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+  
+    
+}
 
-     .nav .right-links {
-         display: flex;
-         align-items: center;
-     }
+.main-nav li {
+    display: inline-block;
+    margin-right: 50px;
+    
+    
+}
 
-     .nav .right-links a {
-         text-decoration: none;
-         color: white;
-         margin-left: 15px;
-     }
-     .nav .right-links button {
-         background-color: #555;
-         border: none;
-         color: white;
-         padding: 10px 20px;
-         cursor: pointer;
-         border-radius: 5px;
-     }
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 6px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #2a1a55;
+} 
 
-     .nav .right-links button:hover {
-         background-color: #777;
-     }</style>
+
+
+
+ .btn {
+    
+    height: 35px;
+    background:#2a1a55;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+  
+    color: #fdfdfd;
+}
+.btn:hover {
+    opacity: 0.83;
+}
+section{
+    height:50px;
+    background-color:#FBBF00;
+    position: fixed;
+    width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+ </style>
     <div class="container">
         <div class="box form-box">
             <h2>Les options à ajouter</h2>
@@ -160,5 +219,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
         </div>
     </div>
+    <section><p>@Copyright 2024 -SCG. Tous droits réservés.</p></section>
 </body>
 </html>
