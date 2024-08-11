@@ -82,58 +82,105 @@ $next_id = $row['max_id'] + 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
    
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     </head>
+    <header>
+<nav>
+                        <div class="">
+                        <img src="img/logo-1-1.png"  alt="logo" class="logo">
+                            <ul class="main-nav">
+                            <li> <a href="#">About us</a></li>
+                                <li> <a href="#">Sign up</a></li>
+                                
+                                
+                            </ul> 
+                        </div>    
+                    </nav>
+<nav>
+</header>
 <body>
     <style> 
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lato','Arial' ,sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+}
+
+nav{
+    height:50px;
+    background-color:white;
  
-    .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #121212;
-            padding: 10px 10px;
-            margin: 10px 0px;
-            color: white;
-        }
-
-        .nav img {
-            height: 30px; 
-        }
-
-        .nav .right-links {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav .right-links a {
-            text-decoration: none;
-            color: white;
-            margin-left: 15px;
-        }
-        .nav .right-links button {
-            background-color: #555;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .nav .right-links button:hover {
-            background-color: #777;
-        }</style>
-    <div class="nav">
-        <p><a href="dashboard.php"><img src="img/Logo-Secil-min-300x288.png" width=30px></a></p>
     
-    <div class="right-links">
+}
+.logo {
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
 
-        <a href="logout.php"><button class="btn">Log out</button></a>
-        
-    </div>
-</div>
+.main-nav {
+    
+    
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+  
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 6px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #2a1a55;
+} 
+
+
+
+
+ .btn {
+    
+    height: 35px;
+    background:#2a1a55;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+  
+    color: #fdfdfd;
+}
+.btn:hover {
+    opacity: 0.83;
+}
+  
+ 
+ </style>
+    
 <div class="container h">
     <div class="form-group">
         <form method="post" class="form-inline" id="registrationForm" enctype="multipart/form-data">
