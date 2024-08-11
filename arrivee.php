@@ -118,9 +118,9 @@ body {
          
         }
 
-        .content {
+    .content {
             flex-grow: 1;
-           
+            
         }
 nav{
     height:50px;
@@ -190,6 +190,8 @@ section {
             background-color: #FBBF00;
             text-align: center;
             padding: 10px 0;
+            margin-top: 20px; 
+
         }
  
  </style>
