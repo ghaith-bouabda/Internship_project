@@ -137,7 +137,7 @@ nav{
 
 .main-nav li {
     display: inline-block;
-    margin-left: 40px;
+    margin-right: 40px;
     
     
 }
@@ -176,7 +176,10 @@ nav{
 .btn:hover {
     opacity: 0.83;
 }
-  
+section{
+    height:50px;
+    background-color:#FBBF00;
+}
  
  </style>
     
@@ -273,7 +276,7 @@ nav{
     </div>
 </div>
 
-       
+<section><p>@Copyright 2024 -SCG. Tous droits réservés.</p></section>
     </body>
 
 </html>
