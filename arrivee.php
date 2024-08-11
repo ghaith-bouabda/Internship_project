@@ -92,7 +92,6 @@ $next_id = $row['max_id'] + 1;
                         <img src="img/logo-1-1.png"  alt="logo" class="logo">
                             <ul class="main-nav">
                             <li> <a href="#">About us</a></li>
-                                <li> <a href="#">Sign up</a></li>
                                 
                                 
                             </ul> 
