@@ -287,6 +287,6 @@ section{
             Service commercial :
             sales@scg.com.tn </p></p></footer>
         
-        <section><p>merci :)</p></section>
+        <section><p>awl git wouk</p></section>
 </body>
 </html>
