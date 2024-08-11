@@ -155,9 +155,20 @@ html {
 background-image:url('img/blue.jpg');
 background-position:center;
 background-size:cover;
-height:450px;
+    height:450px;
 }
+body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
 
+        }
+
+    .content {
+            flex-grow: 1;
+            
+        }
 
 nav{
   height: 50px;;
@@ -247,6 +258,8 @@ footer{
   background-size:cover;
   height:500px;
   background-position: center;
+  margin: 0;
+  padding: 0; 
   
 }
 footer p{
@@ -254,6 +267,7 @@ footer p{
   width: 270px;
   margin-left: 22%;
   padding-top:10%;
+
   
   color:#fff;
   word-spacing:5px;
@@ -262,10 +276,18 @@ footer img {
   position: absolute;
   padding-left: 44%;
 }
-section{
-  height:50px;
-  background-color:#FBBF00;
-}
+section {
+            background-color: #FBBF00;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px; 
+            margin: 0;
+
+
+        }
+ 
+
+
 </style>
     <footer>
         <img src="img/white-1-1.png" alt="logo">

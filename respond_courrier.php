@@ -51,6 +51,110 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Respond to Courrier</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+<header>
+<nav>
+                        <div class="">
+                        <img src="img/logo-1-1.png"  alt="logo" class="logo">
+                            <ul class="main-nav">
+                            <li> <a href="user_dashboard.php">Home</a></li>
+
+                            <li> <a href="#">About us</a></li>
+                                
+                                
+                            </ul> 
+                        </div>    
+                    </nav>
+<nav>
+</header>
+<body>
+    <style> 
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lato','Arial' ,sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+}
+body {
+    padding-bottom: 60px; 
+}
+nav{
+    height:50px;
+    background-color:white;
+ 
+}
+.logo {
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.main-nav {
+    
+    
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+  
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 50px;
+    
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 6px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #2a1a55;
+} 
+
+
+
+
+ .btn {
+    
+    height: 35px;
+    background:#2a1a55;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+  
+    color: #fdfdfd;
+}
+.btn:hover {
+    opacity: 0.83;
+}
+section{
+    height:50px;
+    background-color:#FBBF00;
+    position: fixed;
+    width: 100%;
+  left: 0;
+  bottom: 0;
+  
+}
+
+ </style>
 <body>
     <div class="container mt-4">
         <h2>Respond to Courrier</h2>
@@ -64,5 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit" class="btn btn-primary">Submit Response</button>
         </form>
     </div>
+    <section><p>@Copyright 2024 -SCG. Tous droits réservés.</p></section>
+
 </body>
 </html>
