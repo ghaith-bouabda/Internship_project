@@ -219,7 +219,7 @@ footer img {
     padding-left: 44%;
 }
 section{
-    height:100px;
+    height:50px;
     background-color:#FBBF00;
 }
 </style>
@@ -287,6 +287,6 @@ section{
             Service commercial :
             sales@scg.com.tn </p></p></footer>
         
-        <section><p>awl git wouk</p></section>
+        <section><p>@Copyright 2024 -SCG. Tous droits réservés.</p></section>
 </body>
 </html>

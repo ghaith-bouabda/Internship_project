@@ -133,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Service commercial :
             sales@scg.com.tn </p></p></footer>
         
-        <section><p>merci :)</p></section>
+        <section><p>@Copyright 2024 -SCG. Tous droits réservés.</p></section>
 </body>
 </html>
 <style>
@@ -292,6 +292,6 @@ footer img {
     padding-left: 44%;
 }
 section{
-    height:100px;
+    height:50px;
     background-color:#FBBF00;
 }</style>
