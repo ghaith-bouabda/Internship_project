@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 <header>
@@ -156,29 +156,39 @@ section{
 }
 
  </style>
-    <div class="container">
-        <div class="box form-box">
-            <h2>Edit options</h2>
-            <form method="post" action="updateoptions.php">
-            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
+   <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-box">
+                    <h2>Edit Options</h2>
+                    <form method="post" action="updateoptions.php">
+                        <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
 
-                <label for="table">Select Table:</label>
-                <select id="table" name="table" required>
-                    <option value="optionasuivre">A Suivre</option>
-                    <option value="optiondest">Destination</option>
-                    <option value="optionobjetcourr">Objet Courrier</option>
-                    <option value="optionorigin">Origine</option>
-                    <option value="optiontypecourrier">Type Courrier</option>
-                </select><br><br>
+                        <div class="mb-3">
+                            <label for="table" class="form-label">Select Table:</label>
+                            <select id="table" name="table" class="form-select" required>
+                                <option value="optionasuivre">A Suivre</option>
+                                <option value="optiondest">Destination</option>
+                                <option value="optionobjetcourr">Objet Courrier</option>
+                                <option value="optionorigin">Origine</option>
+                                <option value="optiontypecourrier">Type Courrier</option>
+                            </select>
+                        </div>
 
-                <label for="id">ID of Option to Edit:</label>
-                <input type="number" id="id" name="id" required><br><br>
+                        <div class="mb-3">
+                            <label for="id" class="form-label">ID of Option to Edit:</label>
+                            <input type="number" id="id" name="id" class="form-control" required>
+                        </div>
 
-                <label for="new_value">New Value:</label>
-                <input type="text" id="new_value" name="new_value" required><br><br>
+                        <div class="mb-3">
+                            <label for="new_value" class="form-label">New Value:</label>
+                            <input type="text" id="new_value" name="new_value" class="form-control" required>
+                        </div>
 
-                <input type="submit" value="Edit Option">
-            </form>
+                        <input type="submit" class="btn btn-primary" value="Edit Option">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <section><p>@Copyright 2024 -SCG. Tous droits réservés.</p></section>

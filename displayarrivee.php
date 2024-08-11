@@ -253,6 +253,7 @@ section{
                             <th>Objet Courrier</th>
                             <th>A Suivre</th>
                             <th>Status</th>
+                            <th>Response</th>
                             <th>Piece Jointe</th>
                         </tr>
                     </thead>
@@ -273,6 +274,7 @@ section{
                                 <td><?php echo htmlspecialchars($doc['objet_courrier']); ?></td>
                                 <td><?php echo htmlspecialchars($doc['a_suivre']); ?></td>
                                 <td><?php echo htmlspecialchars($doc['status']); ?></td>
+                                <td><?php echo htmlspecialchars($doc['response']); ?></td>
                                 <td><a href="uploads/<?php echo htmlspecialchars($doc['Piece_jointe']); ?>" target="_blank">View</a></td>
                             </tr>
                         <?php endforeach; ?>

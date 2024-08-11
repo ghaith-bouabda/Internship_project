@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 <header>
@@ -195,28 +195,43 @@ section{
 }
 
  </style>
-    <div class="container">
-        <div class="box form-box">
-            <h2>Les options à ajouter</h2>
-            <form method="post" action="insertoptions.php">
-            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
-                <label for="optionasuivre">Option for A Suivre:</label>
-                <input type="text" id="optionasuivre" name="optionasuivre"><br><br>
+     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-box">
+                    <h2>Les options à ajouter</h2>
+                    <form method="post" action="insertoptions.php">
+                        <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
 
-                <label for="optiondest">Option for Destination:</label>
-                <input type="text" id="optiondest" name="optiondest"><br><br>
+                        <div class="mb-3">
+                            <label for="optionasuivre" class="form-label">Option for A Suivre:</label>
+                            <input type="text" id="optionasuivre" name="optionasuivre" class="form-control">
+                        </div>
 
-                <label for="optionobjetcourr">Option for Objet Courrier:</label>
-                <input type="text" id="optionobjetcourr" name="optionobjetcourr"><br><br>
+                        <div class="mb-3">
+                            <label for="optiondest" class="form-label">Option for Destination:</label>
+                            <input type="text" id="optiondest" name="optiondest" class="form-control">
+                        </div>
 
-                <label for="optionorigin">Option for Origine:</label>
-                <input type="text" id="optionorigin" name="optionorigin"><br><br>
+                        <div class="mb-3">
+                            <label for="optionobjetcourr" class="form-label">Option for Objet Courrier:</label>
+                            <input type="text" id="optionobjetcourr" name="optionobjetcourr" class="form-control">
+                        </div>
 
-                <label for="optiontypecourrier">Option for Type Courrier:</label>
-                <input type="text" id="optiontypecourrier" name="optiontypecourrier"><br><br>
+                        <div class="mb-3">
+                            <label for="optionorigin" class="form-label">Option for Origine:</label>
+                            <input type="text" id="optionorigin" name="optionorigin" class="form-control">
+                        </div>
 
-                <input type="submit" value="Add Options">
-            </form>
+                        <div class="mb-3">
+                            <label for="optiontypecourrier" class="form-label">Option for Type Courrier:</label>
+                            <input type="text" id="optiontypecourrier" name="optiontypecourrier" class="form-control">
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" value="Add Options">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <section><p>@Copyright 2024 -SCG. Tous droits réservés.</p></section>
