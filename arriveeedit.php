@@ -148,12 +148,13 @@ html {
         font-weight: 300;
         font-size: 15px;
 }
-
+body {
+    padding-bottom: 60px; 
+}
 nav{
     height:50px;
     background-color:white;
  
-    
 }
 .logo {
     height: 70px;
@@ -216,9 +217,12 @@ nav{
 section{
     height:50px;
     background-color:#FBBF00;
-   
+    position: fixed;
+    width: 100%;
+  left: 0;
+  bottom: 0;
 }
- 
+
  </style>
     <div class="container">
         <?php if (!isset($document)): ?>

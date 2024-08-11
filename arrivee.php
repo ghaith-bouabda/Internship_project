@@ -111,7 +111,17 @@ html {
         font-weight: 300;
         font-size: 15px;
 }
+body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+         
+        }
 
+        .content {
+            flex-grow: 1;
+           
+        }
 nav{
     height:50px;
     background-color:white;
@@ -176,10 +186,11 @@ nav{
 .btn:hover {
     opacity: 0.83;
 }
-section{
-    height:50px;
-    background-color:#FBBF00;
-}
+section {
+            background-color: #FBBF00;
+            text-align: center;
+            padding: 10px 0;
+        }
  
  </style>
     
