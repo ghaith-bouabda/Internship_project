@@ -199,7 +199,7 @@ section{
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
                 <div class="form-box">
-                    <h2>Les options à ajouter</h2>
+                    <h2>Insert options</h2>
                     <form method="post" action="insertoptions.php">
                         <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
 

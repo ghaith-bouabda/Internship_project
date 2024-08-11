@@ -229,7 +229,7 @@ section{
 <div class="main">
 
 <div class="dropdown">
-  <span>Arrivée</span>
+  <span>Arrival</span>
   <div class="dropdown-content">
   <a href="arrivee.php"> Add</a>
   <a href="arriveeedit.php"> Edit</a>
@@ -237,7 +237,7 @@ section{
   </div>
 </div>
 <div class="dropdown">
-  <span>Depart</span>
+  <span>Departure</span>
   <div class="dropdown-content">
   <a href="depart.php"> Add</a>
   <a href="departedit.php"> Edit</a>

@@ -238,7 +238,7 @@ section{
                         <img src="img/logo-1-1.png"  alt="logo" class="logo">
                             <ul class="main-nav">
                             <li> <a href="#">About us</a></li>
-                                <li> <a href="#">Sign up</a></li>
+                                <li> <a href="register.php">Sign up</a></li>
                                 
                                 
                             </ul> 

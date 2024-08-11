@@ -63,8 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <img src="img/logo-1-1.png"  alt="logo" class="logo">
                             <ul class="main-nav">
                             <li> <a href="#">About us</a></li>
-                              <li>  <a href="#">How it works</a></li>
-                            <li>    <a href="#">Our cities</a></li>
+                            <li> <a href="login.php">Login</a></li>
                                 <li> <a href="#">Sign up</a></li>
                                 
                                 
